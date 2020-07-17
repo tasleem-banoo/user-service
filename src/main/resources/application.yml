@@ -1,0 +1,22 @@
+server.port : 8810
+spring.application.name : user-service
+
+app:
+ name : Microservice Session 3
+ description : Welcome to ${app.name}
+
+my:
+ greeting: Hello	
+ list:
+  value: Tasleem,Palak,Amit
+ map:
+  value: "{Position:'SSE',Company:'ATCS'}"
+
+db:
+ connection: "{Connection:'http://..',username:'demo123',password:'demo'}"
+ host: 127.0.0.1
+ port: 1200
+
+management.endpoints.web.exposure.include: "*"
+
+spring.cloud.config.uri: http://localhost:8888
